@@ -85,10 +85,7 @@ box-sizing: border-box;
 }
 .lenguajes
 {
-    color: black;
-    
-
-    
+    color: black;    
     background-image: url(assets/images/military.jpg);
     border: 10% outset greenyellow; /* Asumiendo que deseas un borde sólido */
     box-shadow: -10px -10px 10px rgb(10, 10, 10, 0.8); /* Ajusté la sintaxis para el sombreado */
