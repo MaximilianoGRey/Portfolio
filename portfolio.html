@@ -11,101 +11,73 @@
     data-*=es un atributo que nos permite guardar algun valor en la etiqueta HTML
 
 -->
-<head>
-    
+<head class="head">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiencia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="assets/images/MaximilianoR.jpg" type="inage/x-icon">
     <link rel="stylesheet" href="style.css"/>
-    <img class="logo" src="assets/images/Logo_temporal.JPG" alt="logo">
-    <h1 id="titulo">Rey Maximiliano Gabriel</h1> 
-    <aside>Visita mi linedin</aside>
-    <nav class="Navegacion">
-      <table>
-          <!--Las tablas se definen primero con <table> luego <tr>=filas y finalmente <td>=celdas
-              las cabeceras se definen con la etiquta <caption> y posteriormente las etiquetas con <thead> para establecer gurpos dentro de la tabla que internamente lleva un <tr> y un <th> para la definicion si establecemos un thead, el resto de los elementos deben estar contenidos dentro de un <tbody> y podemos incluir tambien un <tfoot>
-              Atributo de tablas: para hacer que la celdas ocupen mas de una fila <rowspan="cantidad de filas"> y para que ocupe mas de una columna <colspan="cantidad de columnas" todo esto dentro del <td>> 
-                  
-                  cuando necesitamos seleccionar una columna tenemos el <colgroup> dentro de esta incluiremos tantas equiquetas col como columnas se puede incluir un span="cantidad" para que la seleccion ocupe mas columnas desde su posicion.  
-                  
-              -->
-          <tr>
-         <ol>
-          <td><li><a href="#datos_personales">Datos personales</a></li></td>
-          <td><li><a href="#estudios">Estudios</a></li></td>
-          <td><li><a href="#experiencia_laboral">Experiencia laboral</a></li></td>
-          <td><li><a href="index.html">Ir a home </a></li></td>
-          
-         </ol>
-      </tr>
-      </table>
-    </nav>
-
+  
+   
 </head>
-<body>
+<body class="body">
     
     
-    <header>
-        <img id="foto" src="assets/images/MaximilianoR.jpg" alt="fotop"><!--siempre debe ir el atributo alt
-        Device pixel ratio: tener en cuenta para aplicaciones movilkes, relacion entre los pixeles reales y los disponibles buscar en whatisyouviewport
-        
-        atributos que se le puede poner a las imagenes width= height= es recomendable hacerlo desde el CSS
-
-        dependiendo del device pixel ratio se pueden colocar distinas imagenes con distinto tamaño para que se carguen segun la deteccion de este se puede utilizar el srcset= en el cual se pueden poner imagenes de ditinsto tamaño agregando un valor de cantidad de pixeles para que se active 
-        -->
-
+    <header class="header">
+                        <a href="index.html" class= "enindex">Inicio </a></td>
     </header>
  
     <main>
-       
-        <section id="datos_personales" clase="datosPersonales">
-            <h2 title="ejemplo de articulo title">Curriculum Vitae</h2>
-            <article> <!--Agrupa contenido que no esta relacionado-->
-           <header>
-                <h3>Datos peronales</h3>
-            </header>
-            <p class="texto">Nombre y Apellido: Maximiliano Gabriel Rey</p>
-            <p>Fecha de nacimiento:</p><!--Tanto los p como los h son elementos de bloque-->
-            <p>Nacionalidad: Argentina</p>
-            <p>Estado civil: Soltero</p>
-            <span>Este es un elemento de linea</span><!--span es un elemento de linea que no ocupa espacio em=representa enfasis strong: mas enfasis small:menos enfasis br:forzar salto de linea wvr=salto de linea si hiciera falta time= seusa para representar un contenido de hora/fecha i=italic b=bold u=underline -->
-        
-            </article>
-          
-        </section> <!--Contenedor generico que agrupa contenido que esta asosciado /Por otro lado el aside es para contenido relacionado pero no forma parte del contenido principal del que estoy hablando --> 
-        <section class="estudios">
-            <h2>Estudios</h2>
-           
-            <article>
-                <header>
-            <h3>Terciarios</h3>
-        </header>
-         <p>Tecnicatura superior en Higiene y Seguridad Laboral</p>
-         <p>Año de finalizacion:2014</p>
-         <p>Año de finalizacion:2016</p>
-         <p>Tecnicatura superior en programacion</p>
-         <p>Año de finalizacion:2021</p>
-         <p>Año de finalizacion:En curso</p>
-            </article>
-            <article>
-                <header>
-            <h3>Grado</h3>
-        </header>
-        
-            </article>
-        
-        
-        </section>
-        <section class="experienciaLaboral">
-            <h2>Experiencia laboral</h2>
-        <article>
-<header>
+        <div class="contenedor">
+
+            <div class="bloque1">
+                  <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran" target="_blank"><img class="foto" src="assets/images/MaximilianoR.jpg" alt="fotop"></a>
+                
+               
     
-</header>
+            </div>
+            <div class="bloque2">   
+                <h1 class="titulo">Sobre mi</h1>
+                <p class="parrafo">Me llamo Maximiliano Rey, soy Licenciado en Higiene y Seguridad y estudiante de la Tecnicatura Superior en Programacion, actualmente me encuentro ejerciendo mi primer profesion en la cual tengo una experiencia de 7 años en el rubro. Mi objetivo final es buscar combinar ambas profesiones para profundizar conocimientos y abordar nuevas tecnologias en la busqueda de la automatización y optimización de procesos.</p>
+    
+            
 
-</article>
+        </div>
+    </div>
+    <div class="lenguajes">
+    <h1 class="titulo">En aprendizaje</h1>
+    <img class="leng" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png" alt="C++" >
+    <img class="leng" src="https://cdn.worldvectorlogo.com/logos/c--4.svg" alt="C#" >
+    <img class="leng" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/.NET_Core_Logo.svg/2048px-.NET_Core_Logo.svg.png" alt=".NETFRAMEWORK" >
+    <img class="leng" src="https://e7.pngegg.com/pngimages/758/653/png-clipart-sql-computer-icons-symbol-miscellaneous-text.png" alt="SQLSERVER" >
+    <img class="leng" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png" alt="HTML5" >
+    <img class="leng" src="https://e7.pngegg.com/pngimages/604/592/png-clipart-css3-cascading-style-sheets-logo-html-beautify-blue-angle-thumbnail.png" alt="CSS" >
+    <img class="leng" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Javascript_badge.svg/946px-Javascript_badge.svg.png" alt="JS" >
 
-</section>
+    
+    </div>
+        
+
     </main> 
-    <footer>
-Proyecto pagina laboral 2024
+    <footer class="footer">
+    <div>
+        <article>
+            <h1 class="titulo">Mis redes</h1>
+            <div class="contacto">
+                <a href="https://github.com/MaximilianoGRey" target="_blank"><img class="redes1" src="https://seeklogo.com/images/G/github-logo-7880D80B8D-seeklogo.com.png" alt="github" ></a>
+               
+               <a href="https://www.linkedin.com/in/maximiliano-rey-b97519159?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank"><img class="redes2" src="https://cdn-icons-png.flaticon.com/256/174/174857.png" alt="linkedin" ></a>
+               
+
+
+            </div>
+            <aside class="aside">Portfolio 2024©</aside> 
+        </article>
+    </div>
     </footer>
 </body>
 </html>
