@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en"><!--Esto es un atributo-->
+<!--Atributos globales 
+
+    class= es un atributo que s eusa para dar estilos a traves de css
+
+    id= es un identeificaddor uinic que se utiliza para seleccionar el leemento desde JS y para hacer navegacion a travez de anclas
+
+    title= es un atributo que ayuda a la accesibilidad mostrando una descripcion del elemento al cual pertenece
+    
+    data-*=es un atributo que nos permite guardar algun valor en la etiqueta HTML
+
+-->
+<head>
+    
+    <link rel="stylesheet" href="style.css"/>
+    <img class="logo" src="assets/images/Logo_temporal.JPG" alt="logo">
+    <h1 id="titulo">Rey Maximiliano Gabriel</h1> 
+    <aside>Visita mi linedin</aside>
+    <nav class="Navegacion">
+      <table>
+          <!--Las tablas se definen primero con <table> luego <tr>=filas y finalmente <td>=celdas
+              las cabeceras se definen con la etiquta <caption> y posteriormente las etiquetas con <thead> para establecer gurpos dentro de la tabla que internamente lleva un <tr> y un <th> para la definicion si establecemos un thead, el resto de los elementos deben estar contenidos dentro de un <tbody> y podemos incluir tambien un <tfoot>
+              Atributo de tablas: para hacer que la celdas ocupen mas de una fila <rowspan="cantidad de filas"> y para que ocupe mas de una columna <colspan="cantidad de columnas" todo esto dentro del <td>> 
+                  
+                  cuando necesitamos seleccionar una columna tenemos el <colgroup> dentro de esta incluiremos tantas equiquetas col como columnas se puede incluir un span="cantidad" para que la seleccion ocupe mas columnas desde su posicion.  
+                  
+              -->
+          <tr>
+         <ol>
+          <td><li><a href="#datos_personales">Datos personales</a></li></td>
+          <td><li><a href="#estudios">Estudios</a></li></td>
+          <td><li><a href="#experiencia_laboral">Experiencia laboral</a></li></td>
+          <td><li><a href="index.html">Ir a home </a></li></td>
+          
+         </ol>
+      </tr>
+      </table>
+    </nav>
+
+</head>
+<body>
+    
+    
+    <header>
+        <img id="foto" src="assets/images/MaximilianoR.jpg" alt="fotop"><!--siempre debe ir el atributo alt
+        Device pixel ratio: tener en cuenta para aplicaciones movilkes, relacion entre los pixeles reales y los disponibles buscar en whatisyouviewport
+        
+        atributos que se le puede poner a las imagenes width= height= es recomendable hacerlo desde el CSS
+
+        dependiendo del device pixel ratio se pueden colocar distinas imagenes con distinto tamaño para que se carguen segun la deteccion de este se puede utilizar el srcset= en el cual se pueden poner imagenes de ditinsto tamaño agregando un valor de cantidad de pixeles para que se active 
+        -->
+
+    </header>
+ 
+    <main>
+       
+        <section id="datos_personales" clase="datosPersonales">
+            <h2 title="ejemplo de articulo title">Curriculum Vitae</h2>
+            <article> <!--Agrupa contenido que no esta relacionado-->
+           <header>
+                <h3>Datos peronales</h3>
+            </header>
+            <p class="texto">Nombre y Apellido: Maximiliano Gabriel Rey</p>
+            <p>Fecha de nacimiento:</p><!--Tanto los p como los h son elementos de bloque-->
+            <p>Nacionalidad: Argentina</p>
+            <p>Estado civil: Soltero</p>
+            <span>Este es un elemento de linea</span><!--span es un elemento de linea que no ocupa espacio em=representa enfasis strong: mas enfasis small:menos enfasis br:forzar salto de linea wvr=salto de linea si hiciera falta time= seusa para representar un contenido de hora/fecha i=italic b=bold u=underline -->
+        
+            </article>
+          
+        </section> <!--Contenedor generico que agrupa contenido que esta asosciado /Por otro lado el aside es para contenido relacionado pero no forma parte del contenido principal del que estoy hablando --> 
+        <section class="estudios">
+            <h2>Estudios</h2>
+           
+            <article>
+                <header>
+            <h3>Terciarios</h3>
+        </header>
+         <p>Tecnicatura superior en Higiene y Seguridad Laboral</p>
+         <p>Año de finalizacion:2014</p>
+         <p>Año de finalizacion:2016</p>
+         <p>Tecnicatura superior en programacion</p>
+         <p>Año de finalizacion:2021</p>
+         <p>Año de finalizacion:En curso</p>
+            </article>
+            <article>
+                <header>
+            <h3>Grado</h3>
+        </header>
+        
+            </article>
+        
+        
+        </section>
+        <section class="experienciaLaboral">
+            <h2>Experiencia laboral</h2>
+        <article>
+<header>
+    
+</header>
+
+</article>
+
+</section>
+    </main> 
+    <footer>
+Proyecto pagina laboral 2024
+    </footer>
+</body>
+</html>

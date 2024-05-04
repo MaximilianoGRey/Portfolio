@@ -1,0 +1,25 @@
+.logo {
+    
+
+    color: rgb(138, 255, 71);
+    background-color: brown;
+    font-size: 48px; 
+    border: 2% black;
+    box-shadow: -10px -10px rgb(10 10 10 / 0.3);
+    margin: 5% ;
+    padding: 15px 15px ;
+    width: 10%;
+    height: 10%;
+    
+    /*propiedades de border
+    dotted-dashed-solid-double-groove-ridge-inset-outset-none-hidden*/
+    /*Otra cosa a tener en cuenta son los selectores de atributo, a parte del la etiqueta la clase y el id podemos seleccionar atributos mediante 
+    
+    [atributp]->Genera el cambio sobre todos los atributos de ese tipo ejemplo href
+    [atributo="enlace"]->Genera el cambio sobre ese atributo especifico
+    [atribuuto^=palabra en la que comienza]->Selecciona todos los atributos que comienzan con una plabra similar 
+    [atribuuto*=palabra que contiene]-> Selecciona si el atributo contiene en alguna secicon la palabra
+    [atribuuto$=palabra con la que termina]->Selecciona los atributos que terminan con esa palabra 
+    
+    */
+}
